@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind Project</title>
+    <link href="../public/style.css" rel="stylesheet">
+</head>
+<body class="text-gray-600 font-serif">
+  <div class="grid md:grid-cols-3"><!--Content Wrapper-->
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav>
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/" class=" hover:text-xl text-purple-900 sm:text-orange-700">Cric Stuff</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+              <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.166a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+            
+          </div>
+        </div>
+        <ul class="mt-4 hidden md:block" id="menu">
+          <li class="hover:text-gray-900 hover:font-bold hover:border-r-4 hover:border-red-400 hover:shadow-inner mb-3 ml-3">
+            <a href="#">
+              <span>Home</span>
+              <svg class="w-5 inline-block ml-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li class="hover:text-gray-900 hover:font-bold hover:border-r-4 hover:border-red-400 hover:shadow-inner mb-3 ml-3">
+            <a href="#">
+              <span>About</span>
+              <svg class="w-5 inline-block ml-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
+              </svg>
+              
+            </a>
+          </li>
+          <li class="hover:text-gray-900 hover:font-bold hover:border-r-4 hover:border-red-400 hover:shadow-inner mb-3 ml-3">
+            <a href="#">
+              <span>Contact</span>
+              <svg class="w-5 inline-block ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+              </svg>
+              
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div><!--end of the nav-->
+
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <div class="text-red-400 flex justify-center md:justify-end ">
+        <a href="#" class="hover:bg-red-400 hover:text-white btn border-red-400 md:border-2 transition ease-in duration-500">Log in</a>
+        <a href="#" class="hover:bg-red-400 hover:text-white btn ml-2  border-red-400 md:border-2 transition ease-in-out duration-500">Sign in</a>
+      </div>
+
+     
+
+      <header>
+        <h2 class="text-gray-900 text-4xl font-semibold">Top Rated Players</h2>
+        <h3 class="text-2xl font-semibold">All Formats</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold mt-12 pb-4 border-b border-gray-200">Emerging Players</h4>
+
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <!--cards of players goes here-->
+          <div class="card">
+            <img src="img/jswl.webp" alt="jaiswal" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Yashasvi Jaiswal</span>
+              <span class="block text-gray-500 text-sm">An Indian Opener</span>
+            </div>
+            <div>
+              <span class="badge">1256 Test</spa>
+            </div>
+          </div>
+          <!-- 2nd card-->
+          <div class="card">
+            <img src="img/frazer.webp" alt="jake F gerk" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Jake Fraser McGerk</span>
+              <span class="block text-gray-500 text-sm">An Aussie Opener</span>
+            </div>
+            <div>
+              <span class="badge">558 T20</span>
+            </div>
+          </div>
+          <!--third card-->
+          <div class="card">
+            <img src="img/gill.jpg" alt="gill" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Shubhman Gill</span>
+              <span class="block text-gray-500 text-sm">An Indian Opener</span>
+            </div>
+            <div>
+              <span class="badge">200 in ODI</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-12 pb-4 border-b border-gray-200">All Time Greats</h4>
+
+        <div class="mt-8">
+          <!--Cards goes here-->
+        </div>
+
+        <div class="flex justify-center">
+          <div class="hover:bg-blue-950 hover:shadow-inner hover:text-white bg-gray-200 text-blue-950 btn transform hover:scale-125 transition ease-out duration-500">load more</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
